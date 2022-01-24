@@ -1,0 +1,21 @@
+<button id='get'>GET</button>
+<button id='post'>POST</button>
+<button id='json'>JSON</button>
+<img src='/static/춘식.jfif'>
+<img src='{% static"춘식.jfif" %}'>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+    document.querySelector('#get').addEventListener('click',()=>{
+        const data = axios( {
+            url: '/second/req/ajax/get/',
+            method: 'get',
+            params: {   }
+        } );
+        data.then(function(res) {
+             console.log(res.data);
+            
+        }); //비동기 작업 후 처리하는 callback 
+        
+    });
+</script>

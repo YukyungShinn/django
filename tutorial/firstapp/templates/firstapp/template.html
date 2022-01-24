@@ -1,0 +1,15 @@
+{% extends 'firstapp/layout.html' %}
+{% block content %}
+<form>
+아 이 디 : <input type="text"><br>
+비밀번호 : <input type="text">
+</form>
+{% endblock %}
+
+{%block panel%}
+    <button>1번</button>
+    <button>2번</button>
+    <button>3번</button>
+
+    {% include 'firstapp/ad.html' %}
+{% endblock%}
