@@ -39,7 +39,6 @@
         {% endif %}
     </div>
 </div>
-
 <div class="container my-3">
     <h5 class="border-bottom my-3 py-2">{{review.comment_set.count}}개의 답변이 있습니다.</h5>
     {% for comment in review.comment_set.all %}

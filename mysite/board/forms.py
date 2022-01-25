@@ -14,7 +14,7 @@ class ReviewForm(forms.ModelForm):
             'file':'이미지',
         } 
     # def __init__(self, *args, **kwargs):
-    #     self.fields['file'].required = False 
+    #     self.fields['file'].required = False ?
 
 class CommentForm(forms.ModelForm):
     class Meta:

@@ -10,7 +10,6 @@ class Review(models.Model):
     file=models.FileField(upload_to='%Y/%m/%d',null=True,blank=True)
     create_date = models.DateTimeField()
     modify_date = models.DateTimeField(null=True, blank=True)
-    #voter = models.ManyToManyField(User,related_name='voter_review')
     
     def __str__(self):
         return self.subject
@@ -21,7 +20,6 @@ class Comment(models.Model):
     content = models.TextField()
     create_date = models.DateTimeField()
     modify_date = models.DateTimeField(null=True, blank=True)
-    #voter = models.ManyToManyField(User, related_name='voter_comment')
 
     def __str__(self):
         return self.title

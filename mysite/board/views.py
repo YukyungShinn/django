@@ -37,7 +37,7 @@ def detail(request, review_id):
 
 
 def review_create(request):
-    #board의 질문 등록(사진 업로드 가능)
+    #board의 질문 등록(사진 업로드 가능하게 못했음)
     if request.method == 'POST':
         form = ReviewForm(request.POST,request.FILES)
         subject=request.POST['subject']
