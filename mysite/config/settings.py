@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'file',
     'django.contrib.auth',
     'board.apps.BoardConfig',
     'django.contrib.admin',
@@ -122,3 +123,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR/'media'

@@ -11,7 +11,7 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.AddField(
-            model_name='answer',
+            model_name='comment',
             name='modify_date',
             field=models.DateTimeField(blank=True, null=True),
         ),
